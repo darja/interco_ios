@@ -1,0 +1,13 @@
+/* 
+  strings.strings
+  Interco
+
+  Created by Darja Ryazhskikh on 01.06.17.
+  Copyright © 2017 Darja Ryazhskikh. All rights reserved.
+*/
+"a_meaning" = "I have a diver down; keep well clear at slow speed";
+"b_meaning" = "I am taking in or discharging or carrying dangerous goods";
+"c_meaning" = "Affirmative";
+"d_meaning" = "Keep clear of me; I am maneuvering with difficulty";
+"e_meaning" = "I am altering my course to starboard";
+"f_meaning" = "I am disabled; communicate with me";

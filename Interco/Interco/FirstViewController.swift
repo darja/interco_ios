@@ -9,6 +9,7 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    let data = DataProvider()
 
     override func viewDidLoad() {
         super.viewDidLoad()
