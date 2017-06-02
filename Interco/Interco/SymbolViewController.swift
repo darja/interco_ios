@@ -18,7 +18,9 @@ extension SymbolsListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier("SymbolCell") as! SymbolTableViewCell
         
         let item = data.symbols[indexPath.row]
-        cell.letter.text = String(item.memo)
+        cell.letter.text = String(item.letter).uppercaseString
+        cell.memo.text = item.memo
+        cell.meaning.text = item.meaning
         cell.flag.image = UIImage(named: item.flag)
         return cell
     }

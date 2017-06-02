@@ -11,4 +11,6 @@ import UIKit
 class SymbolTableViewCell: UITableViewCell {
     @IBOutlet var letter: UILabel!
     @IBOutlet var flag: UIImageView!
+    @IBOutlet var memo: UILabel!
+    @IBOutlet var meaning: UILabel!
 }
