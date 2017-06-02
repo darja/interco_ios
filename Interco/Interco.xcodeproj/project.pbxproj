@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C3E13A681EE0A9650003BAFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E13A671EE0A9650003BAFA /* AppDelegate.swift */; };
-		C3E13A6A1EE0A9650003BAFA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E13A691EE0A9650003BAFA /* FirstViewController.swift */; };
+		C3E13A6A1EE0A9650003BAFA /* SymbolsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E13A691EE0A9650003BAFA /* SymbolsListViewController.swift */; };
 		C3E13A6C1EE0A9650003BAFA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E13A6B1EE0A9650003BAFA /* SecondViewController.swift */; };
 		C3E13A6F1EE0A9650003BAFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E13A6D1EE0A9650003BAFA /* Main.storyboard */; };
 		C3E13A711EE0A9650003BAFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3E13A701EE0A9650003BAFA /* Assets.xcassets */; };
@@ -23,7 +23,7 @@
 /* Begin PBXFileReference section */
 		C3E13A641EE0A9650003BAFA /* Interco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Interco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E13A671EE0A9650003BAFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3E13A691EE0A9650003BAFA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		C3E13A691EE0A9650003BAFA /* SymbolsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsListViewController.swift; sourceTree = "<group>"; };
 		C3E13A6B1EE0A9650003BAFA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C3E13A6E1EE0A9650003BAFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3E13A701EE0A9650003BAFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		C3E13A881EE0C4910003BAFA /* SymbolsList */ = {
 			isa = PBXGroup;
 			children = (
-				C3E13A691EE0A9650003BAFA /* FirstViewController.swift */,
+				C3E13A691EE0A9650003BAFA /* SymbolsListViewController.swift */,
 				C3E13A861EE0C2AC0003BAFA /* SymbolTableViewCell.swift */,
 				C3E13A891EE0C4CB0003BAFA /* SymbolViewController.swift */,
 			);
@@ -177,7 +177,7 @@
 				C3E13A871EE0C2AC0003BAFA /* SymbolTableViewCell.swift in Sources */,
 				C3E13A681EE0A9650003BAFA /* AppDelegate.swift in Sources */,
 				C3E13A8A1EE0C4CB0003BAFA /* SymbolViewController.swift in Sources */,
-				C3E13A6A1EE0A9650003BAFA /* FirstViewController.swift in Sources */,
+				C3E13A6A1EE0A9650003BAFA /* SymbolsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

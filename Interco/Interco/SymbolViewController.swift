@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension FirstViewController: UITableViewDataSource {
+extension SymbolsListViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.symbols.count

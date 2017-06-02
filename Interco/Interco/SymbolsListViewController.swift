@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SymbolsListViewController.swift
 //  Interco
 //
 //  Created by Darja Ryazhskikh on 01.06.17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class SymbolsListViewController: UIViewController {
     let data = DataProvider()
 
     override func viewDidLoad() {
