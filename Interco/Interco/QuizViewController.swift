@@ -10,6 +10,7 @@ import UIKit
 
 class QuizViewController: UIViewController {
     let dataProvider = DataProvider()
+    var question: Question?
 
     @IBOutlet var questionImage: UIImageView!
     @IBOutlet var answer1: UIButton!
@@ -32,12 +33,16 @@ class QuizViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onAnswerSelected(sender: AnyObject) {
+        showNextQuestion()
+    }
+    
     private func showNextQuestion() {
-        let question = dataProvider.createQuestion()
+        question = dataProvider.createQuestion()
         
-        questionImage.image = UIImage(named: question.questionFlag)
+        questionImage.image = UIImage(named: question!.questionFlag)
         for i in 0...answers.count - 1 {
-            answers[i].setTitle(question.answers[i].memo, forState: .Normal)
+            answers[i].setTitle(question!.answers[i].memo, forState: .Normal)
         }
     }
 }
