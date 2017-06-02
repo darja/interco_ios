@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Darwin
 
 public class DataProvider {
     let symbols: [Symbol]
@@ -24,5 +25,29 @@ public class DataProvider {
             Symbol(letter: "e", memo: "Eco", morseCode: [], morseMemos: [""]),
             Symbol(letter: "f", memo: "Foxtrot", morseCode: [], morseMemos: [""]),
         ]
+    }
+    
+    public func createQuestion() -> Question {
+        var answersIndices = [Int]()
+        
+        let symbolsCount = UInt32(symbols.count)
+        var symbolIndex: Int
+        let answersCount = 4
+        
+        for _ in 0...answersCount {
+            repeat {
+                symbolIndex = Int(arc4random_uniform(symbolsCount))
+            } while answersIndices.contains(symbolIndex)
+            answersIndices.append(symbolIndex)
+        }
+        
+        let correctIndex = Int(arc4random_uniform(UInt32(answersCount)))
+        
+        var answers = [Symbol]()
+        for i in 0...answersCount {
+            answers.append(symbols[answersIndices[i]])
+        }
+        
+        return Question(type: .FlagLetter, answers: answers, correctIndex: correctIndex)
     }
 }
