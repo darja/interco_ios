@@ -165,42 +165,54 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lXZ-K3-G4b">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="nk0-F6-iHs"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
-                                            <action selector="onAnswerSelected:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="GT6-aG-37a"/>
+                                            <action selector="onAnswerSelected:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Z0w-ft-gJN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Dl8-7S-Pl4">
                                         <rect key="frame" x="0.0" y="50" width="560" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="2vP-DH-hDd"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
-                                            <action selector="onAnswerSelected:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ghi-sa-iRM"/>
+                                            <action selector="onAnswerSelected:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="W3O-6j-Xk0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="IVz-Lv-fXU">
                                         <rect key="frame" x="0.0" y="100" width="560" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="byb-cg-4nf"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
-                                            <action selector="onAnswerSelected:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="MtQ-SQ-qib"/>
+                                            <action selector="onAnswerSelected:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="tte-k1-d9m"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ULi-zD-xEb">
                                         <rect key="frame" x="0.0" y="150" width="560" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="OgD-RH-qwz"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
-                                            <action selector="onAnswerSelected:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ZH1-WU-CCe"/>
+                                            <action selector="onAnswerSelected:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="xeX-1o-qmq"/>
                                         </connections>
                                     </button>
                                 </subviews>

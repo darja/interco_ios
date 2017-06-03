@@ -28,9 +28,9 @@ public class Question {
         self.correctIndex = correctIndex
         
         switch (type) {
-        case .FlagLetter: answerToString = Symbol.getLetter
-        case .FlagMeaning: answerToString = Symbol.getMeaning
-        case .FlagMemo: answerToString = Symbol.getMemo
+        case .FlagLetter: answerToString = { String($0.letter).uppercaseString }
+        case .FlagMeaning: answerToString = { $0.meaning }
+        case .FlagMemo: answerToString = { $0.memo }
         }
     }
     
