@@ -48,6 +48,9 @@ public class DataProvider {
             answers.append(symbols[answersIndices[i]])
         }
         
-        return Question(type: .FlagLetter, answers: answers, correctIndex: correctIndex)
+        let typeIndex = Int(arc4random_uniform(UInt32(Question.TYPES_COUNT)))
+        let type = QuestionType(rawValue: typeIndex)
+        
+        return Question(type: type!, answers: answers, correctIndex: correctIndex)
     }
 }

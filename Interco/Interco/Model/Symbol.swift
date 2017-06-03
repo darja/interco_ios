@@ -24,4 +24,20 @@ class Symbol {
         self.morseCode = morseCode
         self.morseMemos = morseMemos
     }
+    
+    internal static var getLetter = {
+        (symbol: Symbol) -> String in
+        return String(symbol.letter).uppercaseString
+    }
+    
+    internal static var getMemo = {
+        (symbol: Symbol) -> String in
+        return symbol.memo
+    }
+    
+    internal static var getMeaning = {
+        (symbol: Symbol) -> String in
+        return symbol.meaning
+    }
+
 }

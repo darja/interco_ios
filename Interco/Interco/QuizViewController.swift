@@ -42,7 +42,7 @@ class QuizViewController: UIViewController {
         
         questionImage.image = UIImage(named: question!.questionFlag)
         for i in 0...answers.count - 1 {
-            answers[i].setTitle(question!.answers[i].memo, forState: .Normal)
+            answers[i].setTitle(question!.getAnswerString(i), forState: .Normal)
         }
     }
 }

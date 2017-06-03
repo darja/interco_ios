@@ -8,19 +8,30 @@
 
 import Foundation
 
+public enum QuestionType: Int {
+    case FlagLetter = 0
+    case FlagMemo = 1
+    case FlagMeaning = 2
+}
+
 public class Question {
-    public enum Type {
-        case FlagLetter, FlagMemo
-    }
+    static let TYPES_COUNT = 3
     
-    let type: Type
+    let type: QuestionType
     let answers: [Symbol]
     let correctIndex: Int
+    private let answerToString: (Symbol) -> String
     
-    init(type: Type, answers: [Symbol], correctIndex: Int) {
+    init(type: QuestionType, answers: [Symbol], correctIndex: Int) {
         self.type = type
         self.answers = answers
         self.correctIndex = correctIndex
+        
+        switch (type) {
+        case .FlagLetter: answerToString = Symbol.getLetter
+        case .FlagMeaning: answerToString = Symbol.getMeaning
+        case .FlagMemo: answerToString = Symbol.getMemo
+        }
     }
     
     var questionFlag: String {
@@ -29,5 +40,7 @@ public class Question {
         }
     }
     
-
+    public func getAnswerString(index: Int) -> String {
+        return answerToString(answers[index])
+    }
 }
