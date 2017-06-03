@@ -163,7 +163,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dPA-G3-CyU">
                                 <rect key="frame" x="20" y="361" width="560" height="190"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXZ-K3-G4b">
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lXZ-K3-G4b">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="nk0-F6-iHs"/>
@@ -173,7 +173,7 @@
                                             <action selector="onAnswerSelected:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="GT6-aG-37a"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dl8-7S-Pl4">
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Dl8-7S-Pl4">
                                         <rect key="frame" x="0.0" y="50" width="560" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="2vP-DH-hDd"/>
@@ -183,7 +183,7 @@
                                             <action selector="onAnswerSelected:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ghi-sa-iRM"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVz-Lv-fXU">
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="IVz-Lv-fXU">
                                         <rect key="frame" x="0.0" y="100" width="560" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="byb-cg-4nf"/>
@@ -193,7 +193,7 @@
                                             <action selector="onAnswerSelected:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="MtQ-SQ-qib"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULi-zD-xEb">
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ULi-zD-xEb">
                                         <rect key="frame" x="0.0" y="150" width="560" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="OgD-RH-qwz"/>
