@@ -24,6 +24,13 @@ class StatViewController: UIViewController, UITableViewDataSource {
         table.reloadData()
     }
     
+    @IBAction func onClearClick(sender: AnyObject) {
+        let dataController = StatisticsDataController()
+        dataController?.resetLetterStatistics()
+        updateStatistics()
+        table.reloadData()
+    }
+    
     func updateStatistics() {
         let dataController = StatisticsDataController()
         fetchedStatController = dataController!.getLettersStatistics()
