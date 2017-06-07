@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C34E8DFD1EE35FD000FEF5C4 /* StatisticsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C34E8DFB1EE35FD000FEF5C4 /* StatisticsModel.xcdatamodeld */; };
+		C34E8E061EE3619900FEF5C4 /* LetterStatistics+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E8E041EE3619900FEF5C4 /* LetterStatistics+CoreDataProperties.swift */; };
+		C34E8E071EE3619900FEF5C4 /* LetterStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E8E051EE3619900FEF5C4 /* LetterStatistics.swift */; };
+		C34E8E091EE3622100FEF5C4 /* StatisticsDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34E8E081EE3622100FEF5C4 /* StatisticsDataController.swift */; };
+		C39561E01EE896F2004F830C /* StatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39561DF1EE896F2004F830C /* StatTableViewCell.swift */; };
+		C39561E41EE897EE004F830C /* StatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39561E31EE897EE004F830C /* StatViewController.swift */; };
 		C3E13A681EE0A9650003BAFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E13A671EE0A9650003BAFA /* AppDelegate.swift */; };
 		C3E13A6A1EE0A9650003BAFA /* SymbolsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E13A691EE0A9650003BAFA /* SymbolsListViewController.swift */; };
 		C3E13A6C1EE0A9650003BAFA /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E13A6B1EE0A9650003BAFA /* QuizViewController.swift */; };
@@ -17,11 +23,17 @@
 		C3E13A7F1EE0B02B0003BAFA /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E13A7E1EE0B02B0003BAFA /* DataProvider.swift */; };
 		C3E13A831EE0B7A70003BAFA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3E13A821EE0B7A70003BAFA /* Localizable.strings */; };
 		C3E13A871EE0C2AC0003BAFA /* SymbolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E13A861EE0C2AC0003BAFA /* SymbolTableViewCell.swift */; };
-		C3E13A8A1EE0C4CB0003BAFA /* SymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E13A891EE0C4CB0003BAFA /* SymbolViewController.swift */; };
+		C3E13A8A1EE0C4CB0003BAFA /* SymbolTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E13A891EE0C4CB0003BAFA /* SymbolTableViewDataSource.swift */; };
 		C3E13A8D1EE216BF0003BAFA /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E13A8C1EE216BF0003BAFA /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C34E8DFC1EE35FD000FEF5C4 /* StatisticsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StatisticsModel.xcdatamodel; sourceTree = "<group>"; };
+		C34E8E041EE3619900FEF5C4 /* LetterStatistics+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "LetterStatistics+CoreDataProperties.swift"; path = "Model/LetterStatistics+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C34E8E051EE3619900FEF5C4 /* LetterStatistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LetterStatistics.swift; path = Model/LetterStatistics.swift; sourceTree = "<group>"; };
+		C34E8E081EE3622100FEF5C4 /* StatisticsDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsDataController.swift; sourceTree = "<group>"; };
+		C39561DF1EE896F2004F830C /* StatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatTableViewCell.swift; sourceTree = "<group>"; };
+		C39561E31EE897EE004F830C /* StatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatViewController.swift; sourceTree = "<group>"; };
 		C3E13A641EE0A9650003BAFA /* Interco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Interco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E13A671EE0A9650003BAFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E13A691EE0A9650003BAFA /* SymbolsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsListViewController.swift; sourceTree = "<group>"; };
@@ -35,7 +47,7 @@
 		C3E13A821EE0B7A70003BAFA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		C3E13A851EE0BCFB0003BAFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		C3E13A861EE0C2AC0003BAFA /* SymbolTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolTableViewCell.swift; sourceTree = "<group>"; };
-		C3E13A891EE0C4CB0003BAFA /* SymbolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolViewController.swift; sourceTree = "<group>"; };
+		C3E13A891EE0C4CB0003BAFA /* SymbolTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolTableViewDataSource.swift; sourceTree = "<group>"; };
 		C3E13A8C1EE216BF0003BAFA /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +62,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C34E8DFA1EE35F9900FEF5C4 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				C34E8DFB1EE35FD000FEF5C4 /* StatisticsModel.xcdatamodeld */,
+				C39561DF1EE896F2004F830C /* StatTableViewCell.swift */,
+				C39561E31EE897EE004F830C /* StatViewController.swift */,
+			);
+			name = Statistics;
+			sourceTree = "<group>";
+		};
 		C3E13A5B1EE0A9650003BAFA = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +94,7 @@
 				C3E13A7D1EE0AE760003BAFA /* Model */,
 				C3E13A881EE0C4910003BAFA /* SymbolsList */,
 				C3E13A8B1EE210F40003BAFA /* Quiz */,
+				C34E8DFA1EE35F9900FEF5C4 /* Statistics */,
 				C3E13A671EE0A9650003BAFA /* AppDelegate.swift */,
 				C3E13A6D1EE0A9650003BAFA /* Main.storyboard */,
 				C3E13A701EE0A9650003BAFA /* Assets.xcassets */,
@@ -85,9 +108,12 @@
 		C3E13A7D1EE0AE760003BAFA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C34E8E041EE3619900FEF5C4 /* LetterStatistics+CoreDataProperties.swift */,
+				C34E8E051EE3619900FEF5C4 /* LetterStatistics.swift */,
 				C3E13A7B1EE0AE050003BAFA /* Symbol.swift */,
 				C3E13A7E1EE0B02B0003BAFA /* DataProvider.swift */,
 				C3E13A8C1EE216BF0003BAFA /* Question.swift */,
+				C34E8E081EE3622100FEF5C4 /* StatisticsDataController.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -97,7 +123,7 @@
 			children = (
 				C3E13A691EE0A9650003BAFA /* SymbolsListViewController.swift */,
 				C3E13A861EE0C2AC0003BAFA /* SymbolTableViewCell.swift */,
-				C3E13A891EE0C4CB0003BAFA /* SymbolViewController.swift */,
+				C3E13A891EE0C4CB0003BAFA /* SymbolTableViewDataSource.swift */,
 			);
 			name = SymbolsList;
 			sourceTree = "<group>";
@@ -184,11 +210,17 @@
 			files = (
 				C3E13A6C1EE0A9650003BAFA /* QuizViewController.swift in Sources */,
 				C3E13A8D1EE216BF0003BAFA /* Question.swift in Sources */,
+				C34E8E061EE3619900FEF5C4 /* LetterStatistics+CoreDataProperties.swift in Sources */,
 				C3E13A7C1EE0AE050003BAFA /* Symbol.swift in Sources */,
+				C34E8E071EE3619900FEF5C4 /* LetterStatistics.swift in Sources */,
 				C3E13A7F1EE0B02B0003BAFA /* DataProvider.swift in Sources */,
+				C34E8DFD1EE35FD000FEF5C4 /* StatisticsModel.xcdatamodeld in Sources */,
 				C3E13A871EE0C2AC0003BAFA /* SymbolTableViewCell.swift in Sources */,
 				C3E13A681EE0A9650003BAFA /* AppDelegate.swift in Sources */,
-				C3E13A8A1EE0C4CB0003BAFA /* SymbolViewController.swift in Sources */,
+				C39561E01EE896F2004F830C /* StatTableViewCell.swift in Sources */,
+				C3E13A8A1EE0C4CB0003BAFA /* SymbolTableViewDataSource.swift in Sources */,
+				C34E8E091EE3622100FEF5C4 /* StatisticsDataController.swift in Sources */,
+				C39561E41EE897EE004F830C /* StatViewController.swift in Sources */,
 				C3E13A6A1EE0A9650003BAFA /* SymbolsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,10 +337,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Interco/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.darja.Interco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -316,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Interco/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.darja.Interco;
@@ -342,8 +377,23 @@
 				C3E13A7A1EE0A9650003BAFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C34E8DFB1EE35FD000FEF5C4 /* StatisticsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C34E8DFC1EE35FD000FEF5C4 /* StatisticsModel.xcdatamodel */,
+			);
+			currentVersion = C34E8DFC1EE35FD000FEF5C4 /* StatisticsModel.xcdatamodel */;
+			name = StatisticsModel.xcdatamodeld;
+			path = Model/StatisticsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C3E13A5C1EE0A9650003BAFA /* Project object */;
 }
