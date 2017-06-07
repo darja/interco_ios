@@ -11,6 +11,7 @@ import Darwin
 
 public class DataProvider {
     let symbols: [Symbol]
+    var lastAskedIndices = [Int]()
     
     public init() {
         symbols = DataProvider.createSymbols()
@@ -24,6 +25,8 @@ public class DataProvider {
             Symbol(letter: "d", memo: "Delta", morseCode: [], morseMemos: [""]),
             Symbol(letter: "e", memo: "Eco", morseCode: [], morseMemos: [""]),
             Symbol(letter: "f", memo: "Foxtrot", morseCode: [], morseMemos: [""]),
+            Symbol(letter: "g", memo: "Golf", morseCode: [], morseMemos: [""]),
+            Symbol(letter: "h", memo: "Hotel", morseCode: [], morseMemos: [""]),
         ]
     }
     
@@ -33,15 +36,27 @@ public class DataProvider {
         let symbolsCount = UInt32(symbols.count)
         var symbolIndex: Int
         let answersCount = 4
+        let historySize = 5
         
-        for _ in 0...answersCount {
+        if lastAskedIndices.count > historySize {
+            lastAskedIndices.removeFirst()
+        }
+        
+        var correctLetterIndex = -1
+        repeat {
+            correctLetterIndex = Int(arc4random_uniform(symbolsCount))
+        } while (lastAskedIndices.contains(correctLetterIndex))
+        lastAskedIndices.append(correctLetterIndex)
+        
+        for _ in 0...answersCount - 1 {
             repeat {
                 symbolIndex = Int(arc4random_uniform(symbolsCount))
-            } while answersIndices.contains(symbolIndex)
+            } while answersIndices.contains(symbolIndex) || correctLetterIndex == symbolIndex
             answersIndices.append(symbolIndex)
         }
         
-        let correctIndex = Int(arc4random_uniform(UInt32(answersCount)))
+        let correctAnswerIndex = Int(arc4random_uniform(UInt32(answersCount)))
+        answersIndices.insert(correctLetterIndex, atIndex: correctAnswerIndex)
         
         var answers = [Symbol]()
         for i in 0...answersCount {
@@ -51,6 +66,6 @@ public class DataProvider {
         let typeIndex = Int(arc4random_uniform(UInt32(Question.TYPES_COUNT)))
         let type = QuestionType(rawValue: typeIndex)
         
-        return Question(type: type!, answers: answers, correctIndex: correctIndex)
+        return Question(type: type!, answers: answers, correctIndex: correctAnswerIndex)
     }
 }

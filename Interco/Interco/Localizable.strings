@@ -11,3 +11,5 @@
 "d_meaning" = "Keep clear of me; I am maneuvering with difficulty";
 "e_meaning" = "I am altering my course to starboard";
 "f_meaning" = "I am disabled; communicate with me";
+"g_meaning" = "I require a pilot";
+"h_meaning" = "I have a pilot on board";

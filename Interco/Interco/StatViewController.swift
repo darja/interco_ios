@@ -59,8 +59,6 @@ class StatViewController: UIViewController, UITableViewDataSource {
         
         let item = fetchedStatController.objectAtIndexPath(indexPath) as! LetterStatistics
         
-        print("Table item \(indexPath.row), item: \(item)")
-        
         cell.letter.text = item.letter!.uppercaseString
         cell.stat.text =
             "Letter: \(item.correct_letter!) correct (of \(item.asked_letter!))\n" +
