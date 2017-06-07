@@ -12,21 +12,21 @@ import CoreData
 class StatViewController: UIViewController, UITableViewDataSource {
     var fetchedStatController: NSFetchedResultsController!
     
+    @IBOutlet var table: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print ("StatViewController.viewDidLoad")
-        
-        let dataController = StatisticsDataController()
-        fetchedStatController = dataController!.getLettersStatistics()
         updateStatistics()
     }
     
     override func viewWillAppear(animated: Bool) {
-        print ("StatViewController.viewWillAppear")
-        updateStatistics()        
+        updateStatistics()
+        table.reloadData()
     }
     
     func updateStatistics() {
+        let dataController = StatisticsDataController()
+        fetchedStatController = dataController!.getLettersStatistics()
         do {
             try self.fetchedStatController.performFetch()
         } catch {

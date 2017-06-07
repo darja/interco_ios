@@ -353,6 +353,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Statistics" image="stat" id="p4v-o2-Iof"/>
+                    <connections>
+                        <outlet property="table" destination="Nwj-Sr-PGV" id="KlI-tE-M7E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btq-vg-e2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -64,22 +64,29 @@ class StatisticsDataController {
         let stat = fetched[0]
         switch questionType {
         case .FlagLetter:
+            print("Letter [\(letter)] stat: \(stat.correct_letter) of \(stat.asked_letter)")
             if isCorrect {
                 stat.correct_letter = Int(stat.correct_letter!) + 1
             }
             stat.asked_letter = Int(stat.asked_letter!) + 1
             
+            print("Letter [\(letter)] correct: \(isCorrect), now \(stat.correct_letter) of \(stat.asked_letter)")
+            
         case .FlagMemo:
+            print("Memo [\(letter)] stat: \(stat.correct_memo) of \(stat.asked_memo)")
             if isCorrect {
                 stat.correct_memo = Int(stat.correct_memo!) + 1
             }
             stat.asked_memo = Int(stat.asked_memo!) + 1
+            print("Memo [\(letter)] correct: \(isCorrect), now \(stat.correct_memo) of \(stat.asked_memo)")
             
         case .FlagMeaning:
+            print("Meaning [\(letter)] correct: \(isCorrect), now \(stat.correct_meaning) of \(stat.asked_meaning)")
             if isCorrect {
                 stat.correct_meaning = Int(stat.correct_meaning!) + 1
             }
             stat.asked_meaning = Int(stat.asked_meaning!) + 1
+            print("Meaning [\(letter)] correct: \(isCorrect), now \(stat.correct_meaning) of \(stat.asked_meaning)")
         }
         
         do {

@@ -40,6 +40,12 @@ public class Question {
         }
     }
     
+    var questionLetter: String {
+        get {
+            return String(answers[correctIndex].letter)
+        }
+    }
+    
     public func getAnswerString(index: Int) -> String {
         return answerToString(answers[index])
     }

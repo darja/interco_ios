@@ -10,6 +10,7 @@ import UIKit
 
 class QuizViewController: UIViewController {
     let dataProvider = DataProvider()
+    let statisticsDataController = StatisticsDataController()
     var question: Question?
     
     let normalColor =    UIColor(red: 0.3, green: 0.3, blue: 0.5, alpha: 1)
@@ -39,15 +40,19 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func onAnswerSelected(sender: UIButton) {
+        var isCorrect = true
         for i in 0...answers.count - 1 {
             if answers[i] == sender {
-                if i != question?.correctIndex {
+                isCorrect = i == question?.correctIndex
+                if !isCorrect {
                     answers[i].backgroundColor = incorrectColor
                 }
                 answers[question!.correctIndex].backgroundColor = correctColor
                 break
             }
         }
+
+        statisticsDataController?.updateLetterStatistics(question!.questionLetter, questionType: question!.type, isCorrect: isCorrect)
         
         let triggerTime = (Int64(NSEC_PER_SEC) * 2)
         dispatch_after(
