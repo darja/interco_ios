@@ -153,7 +153,6 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="9qC-TB-8wD" firstAttribute="centerY" secondItem="iMU-8U-ezB" secondAttribute="centerY" id="Mxm-oA-7v0"/>
                                     <constraint firstAttribute="height" constant="200" id="OWx-II-Xmn"/>
