@@ -74,9 +74,6 @@
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgM-ta-K3b">
                                                             <rect key="frame" x="0.0" y="60" width="584" height="50"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="50" id="al3-vI-xtf"/>
-                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -90,7 +87,6 @@
                                             <constraints>
                                                 <constraint firstItem="uOP-AY-GC7" firstAttribute="trailing" secondItem="urQ-VW-pQI" secondAttribute="trailingMargin" id="3FT-dA-W08"/>
                                                 <constraint firstItem="uOP-AY-GC7" firstAttribute="leading" secondItem="urQ-VW-pQI" secondAttribute="leadingMargin" id="6AR-L2-Wth"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="uOP-AY-GC7" secondAttribute="bottom" constant="3.5" id="F1V-b7-8mC"/>
                                                 <constraint firstItem="uOP-AY-GC7" firstAttribute="top" secondItem="urQ-VW-pQI" secondAttribute="topMargin" id="xzD-aK-2Qa"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -109,20 +105,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="HIR-sa-O0c" secondAttribute="trailing" id="OqQ-Yz-GQq"/>
                             <constraint firstItem="HIR-sa-O0c" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="USL-dR-G5a"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="HIR-sa-O0c" secondAttribute="bottom" id="VNJ-Uz-BNg"/>
                             <constraint firstAttribute="trailing" secondItem="HIR-sa-O0c" secondAttribute="trailing" id="W1X-Y7-ele"/>
                             <constraint firstItem="HIR-sa-O0c" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="e2b-pF-RdP"/>
-                            <constraint firstItem="HIR-sa-O0c" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="tjs-oS-HlH"/>
                             <constraint firstItem="HIR-sa-O0c" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="zvd-RR-toP"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="OqQ-Yz-GQq"/>
-                                <exclude reference="tjs-oS-HlH"/>
-                            </mask>
-                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="List" image="list" id="acW-dT-cKf"/>
                 </viewController>
